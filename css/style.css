@@ -86,111 +86,113 @@ body {
       height: 25px;
       margin: 0px 20px 0px 20px; }
 
-.block__presentation_text {
-  font-size: 80px;
-  font-weight: bold;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-.block__presentation_description {
-  font-size: 50px;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 230%); }
-.block__presentation_otherdescription {
-  font-size: 20px;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 1700%); }
-.block__presentation_join {
-  font-size: 50px;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 150%); }
-.block__presentation_image {
-  width: 100%;
-  opacity: 0.9;
-  filter: blur(1px); }
-.block__presentation_cyberfire {
-  background-color: #555555;
-  /* Green */
-  color: white;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 17px 28px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-230%, 500%); }
-  .block__presentation_cyberfire:hover {
-    background-color: white;
-    color: black;
-    transition-duration: 0.4s; }
-.block__presentation_itarmy {
-  background-color: #555555;
-  /* Green */
-  color: white;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 17px 28px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-105%, 500%); }
-  .block__presentation_itarmy:hover {
-    background-color: white;
-    color: black;
-    transition-duration: 0.4s; }
-.block__presentation_telegramarmy {
-  background-color: #555555;
-  /* Green */
-  color: white;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 17px 28px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(0%, 500%); }
-  .block__presentation_telegramarmy:hover {
-    background-color: white;
-    color: black;
-    transition-duration: 0.4s; }
-.block__presentation_cybercossacks {
-  background-color: #555555;
-  /* Green */
-  color: white;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 17px 28px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(120%, 500%); }
-  .block__presentation_cybercossacks:hover {
-    background-color: white;
-    color: black;
-    transition-duration: 0.4s; }
+.block__presentation {
+  position: relative; }
+  .block__presentation_text {
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .block__presentation_description {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 230%); }
+  .block__presentation_otherdescription {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 1700%); }
+  .block__presentation_join {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 150%); }
+  .block__presentation_image {
+    width: 100%;
+    opacity: 0.9;
+    filter: blur(1px); }
+  .block__presentation_cyberfire {
+    background-color: #555555;
+    /* Green */
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 17px 28px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-230%, 500%); }
+    .block__presentation_cyberfire:hover {
+      background-color: white;
+      color: black;
+      transition-duration: 0.4s; }
+  .block__presentation_itarmy {
+    background-color: #555555;
+    /* Green */
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 17px 28px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-105%, 500%); }
+    .block__presentation_itarmy:hover {
+      background-color: white;
+      color: black;
+      transition-duration: 0.4s; }
+  .block__presentation_telegramarmy {
+    background-color: #555555;
+    /* Green */
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 17px 28px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 500%); }
+    .block__presentation_telegramarmy:hover {
+      background-color: white;
+      color: black;
+      transition-duration: 0.4s; }
+  .block__presentation_cybercossacks {
+    background-color: #555555;
+    /* Green */
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 17px 28px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(120%, 500%); }
+    .block__presentation_cybercossacks:hover {
+      background-color: white;
+      color: black;
+      transition-duration: 0.4s; }
 
 @keyframes changeColor {
   from {
