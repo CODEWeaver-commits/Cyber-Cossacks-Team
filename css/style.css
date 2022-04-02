@@ -1,0 +1,194 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+/*---------------------------*/
+body {
+  font-family: Lato; }
+
+.block__nav {
+  display: flex;
+  justify-content: space-between;
+  max-height: 120px;
+  min-height: 120px;
+  margin: 0px 110px 0px 110px; }
+  .block__nav_logo {
+    width: 120px;
+    height: 120px; }
+  .block__nav .block__navlist {
+    display: flex;
+    align-items: center; }
+    .block__nav .block__navlist li {
+      font-size: 20px;
+      font-weight: bold;
+      padding: 0px 20px 0px 20px; }
+      .block__nav .block__navlist li:hover {
+        animation-name: changeColor;
+        animation-duration: 0.8s;
+        color: orangered; }
+    .block__nav .block__navlist_magnify {
+      width: 25px;
+      height: 25px;
+      margin: 0px 20px 0px 20px; }
+
+.block__presentation_text {
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+.block__presentation_description {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 230%); }
+.block__presentation_join {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 150%); }
+.block__presentation_image {
+  width: 100%;
+  opacity: 0.9;
+  filter: blur(1px); }
+.block__presentation_cyberfire {
+  background-color: #555555;
+  /* Green */
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 17px 28px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-230%, 500%); }
+  .block__presentation_cyberfire:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 0.4s; }
+.block__presentation_itarmy {
+  background-color: #555555;
+  /* Green */
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 17px 28px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-105%, 500%); }
+  .block__presentation_itarmy:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 0.4s; }
+.block__presentation_telegramarmy {
+  background-color: #555555;
+  /* Green */
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 17px 28px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, 500%); }
+  .block__presentation_telegramarmy:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 0.4s; }
+.block__presentation_cybercossacks {
+  background-color: #555555;
+  /* Green */
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 17px 28px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(120%, 500%); }
+  .block__presentation_cybercossacks:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 0.4s; }
+
+@keyframes changeColor {
+  from {
+    color: black; }
+  to {
+    color: orangered; } }
+
+/*# sourceMappingURL=style.css.map */
