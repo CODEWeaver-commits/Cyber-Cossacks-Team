@@ -66,6 +66,15 @@ body {
         transform: translate(-50%, 230%);
     }
 
+    &_otherdescription {
+        font-size: 20px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 1700%);
+    }
+
     &_join {
         font-size: 50px;
         color: white;
