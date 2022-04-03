@@ -59,7 +59,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /*---------------------------*/
 body {
-  font-family: Lato; }
+  font-family: Lato;
+  width: 100%;
+  height: fit-content; }
 
 .block__nav {
   display: flex;
@@ -96,9 +98,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -200%); }
-    @media only screen and (max-width: 320px) {
-      .block__presentation_text {
-        transform: translate(-50%, -200%); } }
   .block__presentation_description {
     font-size: 2vw;
     color: white;
