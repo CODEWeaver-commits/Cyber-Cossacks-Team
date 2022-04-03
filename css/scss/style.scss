@@ -6,6 +6,30 @@ $color_container: #ece89d;
 $color_element: #5e5373;
 $color_item: #18b5a4;
 
+$sizes: ("xs":320px, "sm":576px, "md":768px, "lg":992px, "xl":1200px);
+
+@mixin media($minmax, $media) {
+    @each $size, $resolution in $sizes {
+      @if $media == $size {
+        @if ($minmax != "within") {
+          @media only screen and (#{$minmax}-width: $resolution) {
+            @content;
+          }
+        } @else {
+          @if (index(map-keys($sizes), $media) > 1) {
+            @media only screen and (min-width: getPreviousSize($media)+1) and (max-width: $resolution) {
+              @content;
+            }
+          } @else {
+            @media only screen and (max-width: $resolution) {
+              @content;
+            }
+          }
+        }
+      }
+    }
+  }
+
 body {
     font-family: Lato;
 }
@@ -48,42 +72,45 @@ body {
 
 .block__presentation {
     position: relative;
+    text-align: center;
 
     &_text {
-        font-size: 80px;
-        font-weight: bold;
-        color: white;
         position: absolute;
+        color: white;
+        font-size: 5vw;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -200%);
+        @include media("within", "xs") {
+            transform: translate(-50%, -200%);
+        }
     }
 
     &_description {
-        font-size: 50px;
+        font-size: 2vw;
         color: white;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, 230%);
+        transform: translate(-50%, -200%);
     }
 
     &_otherdescription {
-        font-size: 20px;
+        font-size: 1vw;
         color: white;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, 1700%);
+        transform: translate(-50%, 1300%);
     }
 
     &_join {
-        font-size: 50px;
+        font-size: 3vw;
         color: white;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, 150%);
+        transform: translate(-50%, 0%);
     }
 
     &_image {
@@ -97,14 +124,14 @@ body {
         color: white;
         border: 1px solid black;
         border-radius: 5px;
-        padding: 17px 28px;
+        padding: 1vw 1vw;
         text-align: center;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 2vw;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-230%, 500%);
+        transform: translate(-230%, 200%);
 
         &:hover {
             background-color: white;
@@ -118,14 +145,14 @@ body {
         color: white;
         border: 1px solid black;
         border-radius: 5px;
-        padding: 17px 28px;
+        padding: 1vw 1vw;
         text-align: center;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 2vw;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-105%, 500%);
+        transform: translate(-100%, 200%);
 
         &:hover {
             background-color: white;
@@ -139,14 +166,14 @@ body {
         color: white;
         border: 1px solid black;
         border-radius: 5px;
-        padding: 17px 28px;
+        padding: 1vw 1vw;
         text-align: center;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 2vw;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(0%, 500%);
+        transform: translate(5%, 200%);
 
         &:hover {
             background-color: white;
@@ -160,14 +187,14 @@ body {
         color: white;
         border: 1px solid black;
         border-radius: 5px;
-        padding: 17px 28px;
+        padding: 1vw 1vw;
         text-align: center;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 2vw;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(120%, 500%);
+        transform: translate(130%, 200%);
 
         &:hover {
             background-color: white;

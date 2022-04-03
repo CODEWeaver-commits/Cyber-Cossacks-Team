@@ -87,36 +87,39 @@ body {
       margin: 0px 20px 0px 20px; }
 
 .block__presentation {
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .block__presentation_text {
-    font-size: 80px;
-    font-weight: bold;
-    color: white;
     position: absolute;
+    color: white;
+    font-size: 5vw;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -200%); }
+    @media only screen and (max-width: 320px) {
+      .block__presentation_text {
+        transform: translate(-50%, -200%); } }
   .block__presentation_description {
-    font-size: 50px;
+    font-size: 2vw;
     color: white;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 230%); }
+    transform: translate(-50%, -200%); }
   .block__presentation_otherdescription {
-    font-size: 20px;
+    font-size: 1vw;
     color: white;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 1700%); }
+    transform: translate(-50%, 1300%); }
   .block__presentation_join {
-    font-size: 50px;
+    font-size: 3vw;
     color: white;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 150%); }
+    transform: translate(-50%, 0%); }
   .block__presentation_image {
     width: 100%;
     opacity: 0.9;
@@ -127,14 +130,14 @@ body {
     color: white;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 17px 28px;
+    padding: 1vw 1vw;
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2vw;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-230%, 500%); }
+    transform: translate(-230%, 200%); }
     .block__presentation_cyberfire:hover {
       background-color: white;
       color: black;
@@ -145,14 +148,14 @@ body {
     color: white;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 17px 28px;
+    padding: 1vw 1vw;
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2vw;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-105%, 500%); }
+    transform: translate(-100%, 200%); }
     .block__presentation_itarmy:hover {
       background-color: white;
       color: black;
@@ -163,14 +166,14 @@ body {
     color: white;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 17px 28px;
+    padding: 1vw 1vw;
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2vw;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(0%, 500%); }
+    transform: translate(5%, 200%); }
     .block__presentation_telegramarmy:hover {
       background-color: white;
       color: black;
@@ -181,14 +184,14 @@ body {
     color: white;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 17px 28px;
+    padding: 1vw 1vw;
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2vw;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(120%, 500%); }
+    transform: translate(130%, 200%); }
     .block__presentation_cybercossacks:hover {
       background-color: white;
       color: black;
