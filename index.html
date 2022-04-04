@@ -8,31 +8,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="block__header">
-            <div class="block__nav">
-                <img class="block__nav_logo" src="img/CCT.png" alt="">
-                <ul class="block__navlist">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Servicing</li>
-                    <li>Portfolio</li>
-                    <li>Blog</li>
-                    <li>Contact us</li>
-                    <img class="block__navlist_magnify" src="img/magnifying-glass-icon.png" alt="">
+        <header class="header">
+            <!-- Logo -->
+            <a href="#"><img class="logo" src="img/CCT.png" alt=""></a>
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <!-- Menu -->
+            <nav class="navigation">
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a> </li>
+                    <li><a href="#">About</a></li>
                 </ul>
+            </nav>
+        </header>
+        <main class="page">
+            <div class="presentation-block">
+                <img class="presentation-block_image" src="img/cyber-cossacks.jpg" alt="">
             </div>
-            <div class="block__presentation">
-                <img class="block__presentation_image" src="img/cyber-cossacks.jpg" alt="">
-                <div class="block__presentation_text">Cyber Cossacks Team</div>
-                <div class="block__presentation_description">Ukraine is above all!</div>
-                <div class="block__presentation_join">Join us to #STOPRUSSIANAGRESSION</div>
-
-                <a class="block__presentation_cyberfire" href="https://t.me/cyberfirechatt">CyberFire chat</a>
-                <a class="block__presentation_itarmy" href="https://t.me/itarmyofukraine2022">IT Army of Ukraine</a>
-                <a class="block__presentation_telegramarmy" href="https://t.me/uatelegramarmy">UA Telegram Army</a>
-                <a class="block__presentation_cybercossacks" href="https://t.me/ddos_separ">DDOS Russians</a>
-                <div class="block__presentation_otherdescription">New telegram chats will be added soon.</div>
-            </div>
-    </div>
+        </main>
     </body>
 </html>

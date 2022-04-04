@@ -59,147 +59,103 @@ h1, h2, h3, h4, h5, h6 {
 
 /*---------------------------*/
 body {
-  font-family: Lato;
+  font-family: Lato; }
+
+.header {
+  box-shadow: 1px 1px 5px 0px #36383F;
+  position: static;
+  top: 0;
+  width: 100%; }
+
+.logo {
+  max-width: 82px;
+  min-width: 82px;
+  margin-left: 15px; }
+
+.navigation {
   width: 100%;
-  height: fit-content; }
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  overflow: hidden; }
 
-.block__nav {
-  display: flex;
-  justify-content: space-between;
-  max-height: 120px;
-  min-height: 120px;
-  margin: 0px 110px 0px 110px; }
-  .block__nav_logo {
-    width: 120px;
-    height: 120px; }
-  .block__nav .block__navlist {
-    display: flex;
-    align-items: center; }
-    .block__nav .block__navlist li {
-      font-size: 20px;
-      font-weight: bold;
-      padding: 0px 20px 0px 20px; }
-      .block__nav .block__navlist li:hover {
-        animation-name: changeColor;
-        animation-duration: 0.8s;
-        color: orangered; }
-    .block__nav .block__navlist_magnify {
-      width: 25px;
-      height: 25px;
-      margin: 0px 20px 0px 20px; }
+.menu a {
+  display: block;
+  padding: 30px;
+  color: #36383F;
+  opacity: 1;
+  font-family: 'work sans', sans serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  transition: 200ms; }
+.menu a:hover {
+  opacity: 0.5; }
 
-.block__presentation {
+.navigation {
+  max-height: 0;
+  transition: max-height .5s ease-out; }
+
+.hamb {
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px; }
+
+.hamb-line {
+  background: #36383F;
+  display: block;
+  height: 2px;
   position: relative;
-  text-align: center; }
-  .block__presentation_text {
+  width: 24px; }
+  .hamb-line:before, .hamb-line:after {
+    background: #36383F;
+    content: '';
+    display: block;
+    height: 100%;
     position: absolute;
-    color: white;
-    font-size: 5vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -200%); }
-  .block__presentation_description {
-    font-size: 2vw;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -200%); }
-  .block__presentation_otherdescription {
-    font-size: 1vw;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 1300%); }
-  .block__presentation_join {
-    font-size: 3vw;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 0%); }
-  .block__presentation_image {
-    width: 100%;
-    opacity: 0.9;
-    filter: blur(1px); }
-  .block__presentation_cyberfire {
-    background-color: #555555;
-    /* Green */
-    color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 1vw 1vw;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-230%, 200%); }
-    .block__presentation_cyberfire:hover {
-      background-color: white;
-      color: black;
-      transition-duration: 0.4s; }
-  .block__presentation_itarmy {
-    background-color: #555555;
-    /* Green */
-    color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 1vw 1vw;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-100%, 200%); }
-    .block__presentation_itarmy:hover {
-      background-color: white;
-      color: black;
-      transition-duration: 0.4s; }
-  .block__presentation_telegramarmy {
-    background-color: #555555;
-    /* Green */
-    color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 1vw 1vw;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(5%, 200%); }
-    .block__presentation_telegramarmy:hover {
-      background-color: white;
-      color: black;
-      transition-duration: 0.4s; }
-  .block__presentation_cybercossacks {
-    background-color: #555555;
-    /* Green */
-    color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 1vw 1vw;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(130%, 200%); }
-    .block__presentation_cybercossacks:hover {
-      background-color: white;
-      color: black;
-      transition-duration: 0.4s; }
+    transition: all .2s ease-out;
+    width: 100%; }
+  .hamb-line:before {
+    top: 5px; }
+  .hamb-line:after {
+    top: -5px; }
 
-@keyframes changeColor {
-  from {
-    color: black; }
-  to {
-    color: orangered; } }
+.side-menu {
+  display: none; }
+
+.side-menu:checked ~ nav {
+  max-height: 100%; }
+
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent; }
+
+.side-menu:checked ~ .hamb .hamb-line:before {
+  transform: rotate(-45deg);
+  top: 0; }
+
+.side-menu:checked ~ .hamb .hamb-line:after {
+  transform: rotate(45deg);
+  top: 0; }
+
+.presentation-block {
+  width: 100%; }
+  .presentation-block_image {
+    width: 100%; }
+
+@media (min-width: 768px) {
+  .navigation {
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: fit-content; }
+
+  .menu li {
+    float: left; }
+  .menu a:hover {
+    background-color: transparent;
+    color: #36383F; }
+
+  .hamb {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
