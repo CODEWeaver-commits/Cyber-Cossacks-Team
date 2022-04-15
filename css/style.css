@@ -92,6 +92,7 @@ body {
   opacity: 0.5; }
 
 .navigation {
+  z-index: 1;
   max-height: 0;
   transition: max-height .5s ease-out; }
 
@@ -137,9 +138,116 @@ body {
   top: 0; }
 
 .presentation-block {
-  width: 100%; }
+  width: 100%;
+  position: sticky;
+  text-align: center; }
   .presentation-block_image {
     width: 100%; }
+  .presentation-block_text-box {
+    width: 100%;
+    padding: 10px; }
+  .presentation-block_title {
+    color: black;
+    width: 106%;
+    height: 80px;
+    margin-top: -2.5%;
+    margin-left: -3.5%;
+    padding-top: 5%;
+    background-color: #0057b8;
+    font-size: 250%;
+    font-weight: bold; }
+  .presentation-block_tagline {
+    color: black;
+    width: 105%;
+    background-color: gold;
+    font-size: 150%;
+    font-weight: bold;
+    height: 80px;
+    margin-top: 0;
+    margin-left: -3%;
+    padding-top: 7%; }
+
+.join-block {
+  display: flex;
+  flex-direction: column; }
+  .join-block_text {
+    text-align: center;
+    font-size: 20px;
+    padding: 30px; }
+    .join-block_text_hashtag {
+      font-weight: bold; }
+  .join-block_button_IT-Army {
+    background-color: #36383F;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer; }
+    .join-block_button_IT-Army:hover {
+      opacity: 1; }
+  .join-block_button_cyberfire {
+    background-color: #36383F;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer; }
+    .join-block_button_cyberfire:hover {
+      opacity: 1; }
+  .join-block_button_cossacks {
+    background-color: #36383F;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer; }
+    .join-block_button_cossacks:hover {
+      opacity: 1; }
+  .join-block_button_cossackschat {
+    background-color: #36383F;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer; }
+    .join-block_button_cossackschat:hover {
+      opacity: 1; }
+
+.footer-block {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: #36383F; }
+  .footer-block_title {
+    color: #f1f1f1;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px; }
 
 @media (min-width: 768px) {
   .navigation {
@@ -148,6 +256,112 @@ body {
     position: relative;
     float: right;
     width: fit-content; }
+
+  .presentation-block_text-box {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, -130%);
+    background-color: rgba(54, 56, 63, 0.5);
+    height: fit-content; }
+  .presentation-block_title {
+    color: #f1f1f1;
+    background-color: transparent;
+    font-size: 350%;
+    padding-top: 2%;
+    height: auto; }
+  .presentation-block_tagline {
+    color: #f1f1f1;
+    background-color: transparent;
+    font-size: 200%;
+    padding-top: 10px;
+    height: auto; }
+
+  .join-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .join-block_text {
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      padding: 30px; }
+      .join-block_text_hashtag {
+        font-weight: bold; }
+    .join-block_button_IT-Army {
+      background-color: #36383F;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      opacity: 0.6;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer; }
+      .join-block_button_IT-Army:hover {
+        opacity: 1; }
+    .join-block_button_cyberfire {
+      background-color: #36383F;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      opacity: 0.6;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer; }
+      .join-block_button_cyberfire:hover {
+        opacity: 1; }
+    .join-block_button_cossacks {
+      background-color: #36383F;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      opacity: 0.6;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer; }
+      .join-block_button_cossacks:hover {
+        opacity: 1; }
+    .join-block_button_cossackschat {
+      background-color: #36383F;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      opacity: 0.6;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer; }
+      .join-block_button_cossackschat:hover {
+        opacity: 1; }
+
+  .footer-block {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: #36383F; }
+    .footer-block_title {
+      color: #f1f1f1;
+      font-size: 20px;
+      text-align: center;
+      padding-top: 20px; }
 
   .menu li {
     float: left; }
